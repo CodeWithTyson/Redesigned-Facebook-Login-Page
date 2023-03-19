@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Outfit:wght@500&display=swap');
+
+*{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+/* Facebook Blue HEX - 1778F2*/
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 80%;
+    height: 80vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper > .logoSection{
+    width: 50%;
+    height: 100%;
+    background-color: #1778F2;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.wrapper > .loginSection{
+    width: 30%;
+    height: 100%;
+    background-color: #FFFFFF;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* Logo Section*/
+
+.logoSection > .logo{
+    color: #FFFFFF;
+    font-size: 60px;
+    margin: 0.5rem 0;
+}
+
+.logoSection > .quote{
+    color: #FFFFFF;
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+/* Login Section*/
+
+.loginSection > .title{
+    color: #1778F2;
+    font-family: "Outfit", sans-serif;
+    font-size: 26px;
+    margin: 0.5rem 0;
+}
+
+.loginSection > input{
+    width: 80%;
+    height: 35px;
+    outline: none;
+    border: 0.5px solid rgba(0,0,0,0.3);
+    border-radius: 6px;
+    padding-left: 0.5rem;
+    font-family: "Fira Sans", sans-serif;
+    margin: 0.25rem 0;
+}
+
+.loginSection > .loginBtn{
+    width: calc(80% + 10px);
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: #1778F2;
+    font-family: "Fira Sans", sans-serif;
+    margin: 0.25rem 0;
+    transition: background-color 75ms ease-in-out 0s;
+}
+
+.loginSection > .loginBtn:hover{
+    background-color: #0366de;
+}
+
+.loginSection > .forgotBtn{
+    color: #1778F2;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 13px;
+    margin: 0.5rem 0;
+}
+
+.loginSection > .forgotBtn:hover{
+    text-decoration: underline;
+    user-select: none;
+}
+
+hr{
+    margin: 0.5rem 0;
+}
+
+.loginSection > .createBtn{
+    width: calc(80% + 10px);
+    height: 35px;
+    color: #FFFFFF;
+    background-color: #32cd32;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-family: "Fira Sans", sans-serif;
+    margin: 0.5rem 0;
+}
+
+.loginSection > .createBtn:hover{
+    background-color: #1eb91e;
+}
+
+/* For Tablet View*/
+
+@media only screen and (max-width: 820px){
+    .wrapper > .logoSection{
+        display: none;
+    }
+
+    .wrapper > .loginSection{
+        width: 80%;
+        border-radius: 6px;
+        height: auto;
+        padding: 2.5rem 0;
+    }
+}
+
+/* For Mobile View*/
+
+@media only screen and (max-width: 425px){
+    .wrapper > .loginSection{
+        width: 100%;
+    }
+}
